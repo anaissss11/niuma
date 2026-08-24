@@ -2,7 +2,7 @@
   "name": "NIUMA DUCK PRO",
   "short_name": "NIUMA",
   "display": "standalone",
-  "start_url": "./",
+  "start_url":"/niuma/"
   "theme_color": "#c8f7c5",
   "background_color": "#ffffff"
 }
