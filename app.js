@@ -98,6 +98,27 @@ function editEnd(){
     })
 }
 
+function resetToday(){
+
+    if(!confirm("Reset today?")){
+        return;
+    }
+
+    localStorage.removeItem("start");
+    localStorage.removeItem("end");
+
+    inBtn.disabled=false;
+    outBtn.disabled=false;
+
+    inBtn.textContent="IN";
+    outBtn.textContent="OUT";
+
+    inBtn.classList.remove("done");
+    outBtn.classList.remove("done");
+
+    render();
+}
+
 function render(){
 
     reset();
